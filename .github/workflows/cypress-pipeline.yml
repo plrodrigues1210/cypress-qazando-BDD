@@ -19,6 +19,9 @@ jobs:
       - name: Checkout/Clone do projeto
         uses: actions/checkout@v4
       
+      - name: Install dependencies
+        run: npm install
+
       # executa os testes com a configuração de gravar a execução com a key linkada no github
       - name: Run tests
         uses: cypress-io/github-action@v6
