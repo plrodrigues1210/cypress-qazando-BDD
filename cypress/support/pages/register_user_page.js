@@ -16,7 +16,7 @@ export default{
     },
 
     fillPassword(password){
-        cy.get('#password')
+        cy.get('#passwordx')
             .type(password)
     },
 
